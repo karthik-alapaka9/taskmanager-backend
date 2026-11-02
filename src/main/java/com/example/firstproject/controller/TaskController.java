@@ -12,7 +12,10 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/tasks")
-@CrossOrigin(origins = "https://taskmanager-gray-iota.vercel.app")
+@CrossOrigin(origins = {
+    "https://taskmanager-gray-iota.vercel.app",
+    "https://taskmanager-ifjsjdrd5-karthik-241c.vercel.app"
+})
 public class TaskController {
 
     private final TaskService taskService;
